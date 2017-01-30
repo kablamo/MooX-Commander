@@ -20,7 +20,7 @@ around '_build_options' => sub {
 
     for my $definition (@$definitions) {
         $definition =~ m/^([A-Za-z0-9_\-]+)/;
-        die "barf that didn't work" unless $1;
+        die "that didn't work" unless $1;
         my $key = lower_snake_case $1;
         $params{$definition} = \$options->{$1};
     }
@@ -41,12 +41,6 @@ around 'usage' => sub {
     print $self->$orig(@_);
     exit 1;
 };
-
-sub die_with_usage {
-    my ($self, $msg) = @_;
-    print "error: " . $msg, "\n";
-    $self->usage;
-}
 
 1;
 
