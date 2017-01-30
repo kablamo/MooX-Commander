@@ -5,9 +5,16 @@ use Moo::Role;
 use String::CamelSnakeKebab qw/upper_camel_case/;
 use Class::Load qw/load_class/;
 
-with 'MooX::Commander::HasOptions';
+has argv => (is => 'lazy');
 
-has '+argv' => (is => 'lazy');
+around 'usage' => sub { 
+    my $orig = shift;
+    my $self = shift;
+    my $message = shift;
+    print $message . "\n" if $message;
+    print $self->$orig(@_);
+    exit 1;
+};
 
 sub go {
     my ($self, $cmd) = @_;

@@ -4,9 +4,16 @@ use Moo::Role;
 use String::CamelSnakeKebab qw/upper_camel_case/;
 use Class::Load qw/load_class/;
 
-with 'MooX::Commander::HasOptions';
+has argv => (is => 'rw', required => 1);
 
-has '+argv' => (is => 'rw', required => 1);
+around 'usage' => sub { 
+    my $orig = shift;
+    my $self = shift;
+    my $message = shift;
+    print $message . "\n" if $message;
+    print $self->$orig(@_);
+    exit 1;
+};
 
 sub go {
     my ($self, @args) = @_;
