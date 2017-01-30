@@ -1,8 +1,10 @@
-Revision history for Perl extension MooX-Commander
+Revision history for MooX-Commander
 
 {{$NEXT}}
 
-0.01 2017-01-30T02:33:47Z
+0.02 2017-01-30T14:00:40Z
+  - Fixed cpanfile thanks to manwar.
 
-    - original version
+0.01 2017-01-30T02:33:47Z
+  - Inital version
 

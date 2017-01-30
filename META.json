@@ -42,7 +42,11 @@
       },
       "runtime" : {
          "requires" : {
+            "Class::Load" : "0",
             "Getopt::Long" : "0",
+            "Moo" : "0",
+            "Moo::Role" : "0",
+            "Path::Tiny" : "0",
             "String::CamelSnakeKebab" : "0",
             "Syntax::Keyword::Junction" : "0",
             "perl" : "5.008001"
@@ -66,7 +70,11 @@
          "web" : "https://github.com/kablamo/MooX-Commander"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_authority" : "cpan:KABLAMO",
+   "x_contributors" : [
+      "Mohammad S Anwar <mohammad.anwar@yahoo.com>",
+      "Eric Johnson <github@iijo.org>"
+   ],
    "x_serialization_backend" : "JSON::PP version 2.27400"
 }

@@ -7,7 +7,7 @@ use String::CamelSnakeKebab qw/upper_camel_case/;
 use Syntax::Keyword::Junction qw/any/;
 use Path::Tiny;
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 
 has base_class   => (is => 'rw');
 has class_prefix => (is => 'rw', default => sub { "Cmd" });
