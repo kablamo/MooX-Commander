@@ -68,7 +68,7 @@ __END__
 
 =head1 NAME
 
-MooX::Commander - add commands to your command line application
+MooX::Commander - Build command line apps with subcommands and option parsing
 
 =head1 SYNOPSIS
 

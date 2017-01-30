@@ -1,10 +1,10 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Build command line apps with subcommands and option parsing",
    "author" : [
       "Eric Johnson <eric.git@iijo.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v2.2.0, CPAN::Meta::Converter version 2.142060",
+   "generated_by" : "Minilla/v2.2.0, CPAN::Meta::Converter version 2.150010",
    "license" : [
       "perl_5"
    ],
@@ -42,16 +42,31 @@
       },
       "runtime" : {
          "requires" : {
+            "Getopt::Long" : "0",
+            "String::CamelSnakeKebab" : "0",
+            "Syntax::Keyword::Junction" : "0",
             "perl" : "5.008001"
          }
       },
       "test" : {
          "requires" : {
-            "Test::More" : "0.98"
+            "Test::Compile" : "0"
          }
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/kablamo/MooX-Commander/issues"
+      },
+      "homepage" : "https://github.com/kablamo/MooX-Commander",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/kablamo/MooX-Commander.git",
+         "web" : "https://github.com/kablamo/MooX-Commander"
+      }
+   },
    "version" : "0.01",
-   "x_authority" : "cpan:KABLAMO"
+   "x_authority" : "cpan:KABLAMO",
+   "x_serialization_backend" : "JSON::PP version 2.27400"
 }
