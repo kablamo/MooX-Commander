@@ -1,5 +1,5 @@
 name = "MooX-Commander"
-# badges = ["travis"]
+badges = ["travis", "coveralls"]
 authority="cpan:KABLAMO"
 
 module_maker="ModuleBuildTiny"
